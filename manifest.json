@@ -1,0 +1,9 @@
+{
+  "name": "Yee non stop(quiet)",
+  "version": "1",
+  "description": "plays the music from the yee meme constantly and quietly in the background",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "manifest_version": 2
+}
