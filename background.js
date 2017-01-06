@@ -1,4 +1,4 @@
-function sandstorm(){
+function yee(){
     var myAudio = new Audio("Yee.wav");        // create the audio object
     //myAudio.src = "sounds/sound.wav"; // assign the audio file to it
     myAudio.volume=.01;
@@ -11,4 +11,4 @@ function sandstorm(){
 
 }
 
-sandstorm()
+yee()
