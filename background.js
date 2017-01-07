@@ -1,14 +1,26 @@
+/***********************************************************************
+* Author: Brendan Scullion
+* Date: Jan 7, 2017
+***********************************************************************/
 function yee(){
     var myAudio = new Audio("Yee.wav");        // create the audio object
-    //myAudio.src = "sounds/sound.wav"; // assign the audio file to it
-    myAudio.volume=.01;
+
+    // Set the volume just high enough for someone to hear. 
+    // Maybe even lower than this would be better. 
+    // You want them to wonder are they hearing things or is it realy there 
+    myAudio.volume=.01; 
+
+    // When the song finishes playing start again
+    // this listener listens for when the song has 'ended' and then starts again 
+    // putting it in a permanent loop.
     myAudio.addEventListener('ended', function() {
     this.currentTime = 0;
     this.play();
     }, false);
-    //myAudio.load()
+
+    // play the soundtrack
     myAudio.play(); 
 
 }
 
-yee()
+yee();
