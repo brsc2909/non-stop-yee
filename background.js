@@ -8,7 +8,7 @@ function yee(){
     // Set the volume just high enough for someone to hear. 
     // Maybe even lower than this would be better. 
     // You want them to wonder are they hearing things or is it realy there 
-    myAudio.volume=.01; 
+    myAudio.volume=0.01; // 0.001 is also a good number. sometimes even 0.01 is too loud.  
 
     // When the song finishes playing start again
     // this listener listens for when the song has 'ended' and then starts again 
